@@ -36,11 +36,11 @@ body {
     width: 30%;
     background-color: #406fb9;
     border-radius: 10px;
-    padding: 30px;
+    padding: 25px;
     display: flex;
     flex-direction: column;
     justify-content: center;
-    gap: 20px;
+    gap: 10px;
     transition: .4s;
 }
 
@@ -68,8 +68,9 @@ body {
 .exp-description button {
     width: 200px;
     background-color: #355C9B;
-    color: white;
+    color: #f1f1f1;
     font-size: 20px;
+    font-weight: 600;
     padding: 10px;
     border-radius: 10px;
     cursor: pointer;
