@@ -5,8 +5,10 @@
 }
 
 body {
-    border: 2px solid red;
-    width: 1350px;
+    /* border: 2px solid red; */
+    background-color: #355C9B;
+    color: #f1f1f1;
+    max-width: 1350px;
     height: 100vh;
     margin: auto;
 }
@@ -18,6 +20,69 @@ body {
 }
 
 .main {
-    border: 2px solid;
-    padding: 1rem 2rem;
+    width: 100%;
+}
+
+.inputFields-container {
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    margin-top: 3rem;
+}
+
+.add-budget,
+.exp-description {
+    /* border: 2px solid lawngreen; */
+    width: 30%;
+    background-color: #406fb9;
+    border-radius: 10px;
+    padding: 30px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    transition: .4s;
+}
+
+.add-budget:hover,
+.exp-description:hover {
+    box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+}
+
+.add-budget label,
+.exp-description label {
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.add-budget input,
+.exp-description input {
+    font-size: 20px;
+    padding: 5px;
+    border: none;
+    border-radius: 6px;
+    cursor: pointer;
+}
+
+.add-budget button,
+.exp-description button {
+    width: 200px;
+    background-color: #355C9B;
+    color: white;
+    font-size: 20px;
+    padding: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+    border: none;
+    transition: .3s;
+}
+
+.add-budget button:active,
+.exp-description button:active {
+    background-color: #4b83dd;
+}
+
+.add-budget button:hover,
+.exp-description button:hover {
+    box-shadow: rgba(0, 0, 0, 0.904) 5px 3px 10px;
 }
