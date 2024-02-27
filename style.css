@@ -47,6 +47,8 @@ body {
 .add-budget:hover,
 .exp-description:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    background-color: #FFA000;
+    color: #FFFFFF;
 }
 
 .add-budget label,
@@ -100,7 +102,9 @@ body {
     font-size: 20px;
     text-align: center;
 }
-
+/* <<<<<<< patch-3
+=======
+ */
 
 
 /* table */
@@ -165,3 +169,4 @@ tr:last-child
 td:last-child {
     border-bottom-right-radius: 10px;
 }
+/* >>>>>>> main */
