@@ -5,12 +5,11 @@
 }
 
 body {
-    /* border: 2px solid red; */
     background-color: #355C9B;
     color: #f1f1f1;
     max-width: 1350px;
-    height: 100vh;
     margin: auto;
+    /* border: 2px solid red; */
 }
 
 .top-heading {
@@ -32,7 +31,6 @@ body {
 
 .add-budget,
 .exp-description {
-    /* border: 2px solid lawngreen; */
     width: 30%;
     background-color: #406fb9;
     border-radius: 10px;
@@ -47,7 +45,6 @@ body {
 .add-budget:hover,
 .exp-description:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
-    background-color: #FFA000;
     color: #FFFFFF;
 }
 
@@ -87,86 +84,50 @@ body {
 
 .add-budget button:hover,
 .exp-description button:hover {
-    box-shadow: rgba(0, 0, 0, 0.904) 5px 3px 10px;
+    box-shadow: rgba(0, 0, 0, 0.836) 5px 3px 10px;
 }
 
-.display-budget{
-    /* border: 2px solid; */
+.display-budget {
     display: flex;
     justify-content: space-around;
     margin-top: 2rem;
 }
 
 .set-budget,
-.remaining-budget{
+.remaining-budget {
     font-size: 20px;
-    text-align: center;
+    cursor: pointer;
 }
-/* <<<<<<< patch-3
-=======
- */
 
 
 /* table */
 
+#expense-list{
+    /* border: 2px solid black; */
+    width: 80%;
+    margin: 50px auto;
+}
 table {
-    border-collapse: separate;
-    border-spacing: 0;
-    border-radius: 10px;
-
-    overflow: hidden;
-    width: 75%;
-    margin-left: auto;
-    margin-right: auto
-}
-
-td {
-    background-color: #FFA000;
-    color: #FFFFFF;
-}
-
-td,
-td {
+    width: 100%;
     padding: 10px;
-    border: 1px solid black;
+    background-color: #406fb9;
+    border-radius: 6px;
 }
 
-
-
-td:hover {
-    background-color: #4b83dd;
-    color: white;
+th{
+    width: 25%;
+    border-radius: 5px;
+    font-size: 25px;
+    background-color: #355C9B;
+    padding: 10px;
 }
 
-th:first-child,
-td:first-child {
-    border-top-left-radius: 10px;
-    border-bottom-left-radius: 10px;
+.append-table td{
+    background-color: transparent;
+    font-size: 25px;
+    padding: 10px;
+    text-align: center;
+    border-bottom: 2px solid;
+    border-radius: 0;
+    cursor: pointer;
 }
-
-th:last-child,
-td:last-child {
-    border-top-right-radius: 10px;
-    border-bottom-right-radius: 10px;
-}
-
-tr:first-child 
-th:first-child {
-    border-top-left-radius: 10px;
-}
-
-tr:first-child 
-th:last-child {
-    border-top-right-radius: 10px;
-}
-
-tr:last-child 
-td:first-child {
-    border-bottom-left-radius: 10px;
-}
-
-tr:last-child 
-td:last-child {
-    border-bottom-right-radius: 10px;
-}
-/* >>>>>>> main */
