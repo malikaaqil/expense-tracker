@@ -13,14 +13,15 @@
 <body>
 
     <p class="top-heading">Expense Tracker 💸</p>
+
     <div class="main">
 
         <div class="inputFields-container">
 
             <div class="add-budget">
                 <label>Enter Your Budget</label>
-                <input type="number">
-                <button>Set Budget</button>
+                <input id="budget-input" type="number">
+                <button id="set-input">Set Budget</button>
             </div>
 
             <div class="exp-description">
@@ -37,6 +38,32 @@
             </div>
 
         </div>
+
+        <div class="display-budget">
+
+            <div class="set-budget">
+                <h4>Set Budget: </h4>
+                <p id="set-display">$: 0.00</p>
+            </div>
+            
+            <div class="remaining-budget">
+                <h4>Remaining Budget: </h4>
+                <p>0.00</p>
+            </div>
+
+        </div>
+
+
+        <!-- <div class="expense-list">
+            <ul>
+                <li>food <span>100</span> <span>20.02.2024</span>  </li> <br>
+                <li>rent <span>150</span> <span>21.02.2024</span>  </li> <br>
+                <li>utility <span>300</span> <span>22.02.2024</span>  </li> <br>
+                <li>phone <span>50</span> <span>23.02.2024</span>  </li> <br>
+                <li>metro <span>100</span> <span>20.02.2024</span>  </li <br>
+            </ul>
+           
+        </div> -->
 
     </div>
 

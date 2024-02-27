@@ -87,3 +87,16 @@ body {
 .exp-description button:hover {
     box-shadow: rgba(0, 0, 0, 0.904) 5px 3px 10px;
 }
+
+.display-budget{
+    /* border: 2px solid; */
+    display: flex;
+    justify-content: space-around;
+    margin-top: 2rem;
+}
+
+.set-budget,
+.remaining-budget{
+    font-size: 20px;
+    text-align: center;
+}
