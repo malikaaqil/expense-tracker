@@ -47,6 +47,8 @@ body {
 .add-budget:hover,
 .exp-description:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 5px 5px 15px;
+    background-color: #FFA000;
+    color: #FFFFFF;
 }
 
 .add-budget label,
