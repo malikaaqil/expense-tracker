@@ -102,3 +102,71 @@ body {
     font-size: 20px;
     text-align: center;
 }
+/* <<<<<<< patch-3
+=======
+ */
+
+
+/* table */
+
+table {
+    border-collapse: separate;
+    border-spacing: 0;
+    border-radius: 10px;
+
+    overflow: hidden;
+    width: 75%;
+    margin-left: auto;
+    margin-right: auto
+}
+
+td {
+    background-color: #FFA000;
+    color: #FFFFFF;
+}
+
+td,
+td {
+    padding: 10px;
+    border: 1px solid black;
+}
+
+
+
+td:hover {
+    background-color: #4b83dd;
+    color: white;
+}
+
+th:first-child,
+td:first-child {
+    border-top-left-radius: 10px;
+    border-bottom-left-radius: 10px;
+}
+
+th:last-child,
+td:last-child {
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+tr:first-child 
+th:first-child {
+    border-top-left-radius: 10px;
+}
+
+tr:first-child 
+th:last-child {
+    border-top-right-radius: 10px;
+}
+
+tr:last-child 
+td:first-child {
+    border-bottom-left-radius: 10px;
+}
+
+tr:last-child 
+td:last-child {
+    border-bottom-right-radius: 10px;
+}
+/* >>>>>>> main */
