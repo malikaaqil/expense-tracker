@@ -7,7 +7,12 @@ let remDisplay = document.getElementById("rem-display");
 setBudgetBtn.addEventListener("click", () => {
 
     if (setDisplay.innerHTML = budgetInput.value <= 0) {
-        Swal.fire("Your budget must be greater than zero.");
+
+        Swal.fire({
+            icon: "error",
+            title: "Your budget must be greater than zero."
+        });
+        setDisplay.innerHTML = 0
 
     } else {
         setDisplay.innerHTML = budgetInput.value
@@ -15,5 +20,6 @@ setBudgetBtn.addEventListener("click", () => {
         budgetInput.value = ""
     }
 
-
 })
+
+
