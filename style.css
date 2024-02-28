@@ -95,8 +95,11 @@ body {
 
 .set-budget,
 .remaining-budget {
-    font-size: 20px;
+    font-size: 23px;
+    font-weight: 600;
     cursor: pointer;
+    /* align-items: center; */
+    text-align: center;
 }
 
 
@@ -117,14 +120,14 @@ table {
 th{
     width: 25%;
     border-radius: 5px;
-    font-size: 25px;
+    font-size: 23px;
     background-color: #355C9B;
     padding: 10px;
 }
 
 .append-table td{
     background-color: transparent;
-    font-size: 25px;
+    font-size: 20px;
     padding: 10px;
     text-align: center;
     border-bottom: 2px solid;
