@@ -27,15 +27,15 @@
             <div class="exp-description">
 
                 <label>Enter Expense's Description</label>
-                <input type="text" placeholder="e.g. Food, Grocery, Rent..">
+                <input id="exp-description" type="text" placeholder="e.g. Food, Grocery, Rent..">
 
                 <label>Enter Expense</label>
-                <input type="number">
+                <input id="expense" type="number">
 
                 <label>Date</label>
-                <input type="date">
+                <input id="date" type="date">
 
-                <button>Add Expense</button>
+                <button id="add-expense">Add Expense</button>
             </div>
 
         </div>
@@ -56,18 +56,23 @@
 
         <div id="expense-list">
             <table>
-                
+
                 <tr>
                     <th>Description</th>
                     <th>Expense</th>
                     <th>Date</th>
                 </tr>
 
-                <!-- <tr class="append-table">
-                    <td>Food</td>
-                    <td>$ 30</td>
-                    <td>25.02.2024</td>
-                </tr> -->
+
+                <div id="table-list" >
+
+                    <tr class="append-table">
+                        <td>Food</td>
+                        <td>$ 30</td>
+                        <td>25.02.2024</td>
+                    </tr>
+
+                </div>
 
             </table>
         </div>
