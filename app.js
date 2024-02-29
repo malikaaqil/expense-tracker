@@ -30,28 +30,60 @@ let expense = document.getElementById("expense");
 let date = document.getElementById("date");
 let addExpBtn = document.getElementById("add-expense");
 
-let tableList = document.getElementById("table-list");
+let expList = document.getElementById("expense-list");
 
 addExpBtn.addEventListener("click", () => {
 
-    // console.log(expDescription.value);
-    // console.log(expense.value);
-    // console.log(date.value);
+    if(remDisplay.innerHTML <= 0){
+
+        Swal.fire({
+            icon: "warning",
+            title: "Your set budget exceeds the limit. Please set the budget."
+        });
+
+    }else{
+
+        Swal.fire({
+            position: "top-end",
+            icon: "success",
+            title: "Expense Added",
+            showConfirmButton: false,
+            timer: 2500
+          });
 
 
-    tableList.appendChild = `<tr class="append-table"> <td>${expDescription.value}</td> <td>${expense.value}</td> <td>${date.value}</td> </tr>`
+ remDisplay.innerHTML = remDisplay.innerHTML - expense.value
 
+    let tableRow = document.createElement("tr")
+    tableRow.setAttribute("class", "append-table")
 
-    // console.log(appendTable);
+    let tableData1 = document.createElement("td")
+    let tableData2 = document.createElement("td")
+    let tableData3 = document.createElement("td")
 
+    let tableData1Text = document.createTextNode(expDescription.value)
+    tableData1.appendChild(tableData1Text)
 
+    let tableData2Text = document.createTextNode("$ " + expense.value)
+    tableData2.appendChild(tableData2Text)
 
-    remDisplay.innerHTML = +remDisplay.innerHTML - expense.value
+    let tableData3Text = document.createTextNode(date.value)
+    tableData3.appendChild(tableData3Text)
+
+    tableRow.appendChild(tableData1)
+    tableRow.appendChild(tableData2)
+    tableRow.appendChild(tableData3)
+
+    expList.appendChild(tableRow)
+
+    expDescription.value = ""
     expense.value = ""
+    date.value = ""
 
 
 
+    }
 
-
+   
 })
 
