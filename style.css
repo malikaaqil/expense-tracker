@@ -198,8 +198,8 @@ th {
     }
 
     .append-table td {
-        font-size: 16px;
-        padding: 5px;
+        font-size: 14px;
+        padding: 5px 0px;
     }
 
 }
@@ -238,7 +238,7 @@ th {
     }
 
     .append-table td {
-        font-size: 14px;
+        font-size: 13px;
         padding: 2px 0px;
     }
 
