@@ -10,7 +10,6 @@ body {
     margin: auto;
     max-width: 1350px;
     margin: auto;
-    /* border: 2px solid red; */
 }
 
 .top-heading {
@@ -27,6 +26,7 @@ body {
     width: 100%;
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 3rem;
 }
 
@@ -91,6 +91,7 @@ body {
 .display-budget {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
     margin-top: 2rem;
 }
 
@@ -99,21 +100,14 @@ body {
     font-size: 23px;
     font-weight: 600;
     cursor: pointer;
-    /* align-items: center; */
     text-align: center;
 }
-
 
 /* table */
 
 #expense-list {
-    /* border: 2px solid black; */
     width: 80%;
     margin: 50px auto;
-}
-
-table {
-    width: 100%;
     padding: 10px;
     background-color: #406fb9;
     border-radius: 6px;
@@ -135,4 +129,117 @@ th {
     border-bottom: 2px solid;
     border-radius: 0;
     cursor: pointer;
+}
+
+
+/* media queries */
+
+@media (max-width: 785px) {
+
+    .add-budget label,
+    .exp-description label {
+        font-size: 20px;
+        font-weight: 500;
+    }
+
+    .add-budget input,
+    .exp-description input {
+        font-size: 17px;
+    }
+
+}
+
+@media (max-width: 680px) {
+
+    .top-heading {
+        font-size: 2.4rem;
+        font-weight: 700;
+    }
+
+    .add-budget label,
+    .exp-description label {
+        font-size: 17px;
+    }
+
+    .add-budget input,
+    .exp-description input {
+        font-size: 14px;
+    }
+
+}
+
+@media (max-width: 660px) {
+
+    .add-budget,
+    .exp-description {
+        width: 50%;
+    }
+
+    .exp-description {
+        margin-top: 20px;
+    }
+
+    .add-budget button,
+    .exp-description button {
+        width: 100%;
+        font-size: 15px;
+        font-weight: 600;
+    }
+
+    .set-budget,
+    .remaining-budget {
+        font-size: 19px;
+    }
+
+    th {
+        width: 25%;
+        font-size: 18px;
+        padding: 5px;
+    }
+
+    .append-table td {
+        font-size: 16px;
+        padding: 5px;
+    }
+
+}
+
+@media (max-width: 360px) {
+
+    .top-heading {
+        font-size: 2rem;
+        font-weight: 500;
+    }
+
+    .set-budget,
+    .remaining-budget {
+        width: 80%;
+        display: flex;
+        justify-content: space-between;
+    }
+
+    .remaining-budget {
+        margin-top: 20px;
+    }
+
+    .set-budget,
+    .remaining-budget {
+        font-size: 15px;
+    }
+
+    #expense-list {
+        width: 100%;
+        margin: 20px auto;
+    }
+
+    th {
+        font-size: 14px;
+        padding: 5px;
+    }
+
+    .append-table td {
+        font-size: 14px;
+        padding: 2px 0px;
+    }
+
 }
