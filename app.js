@@ -1,4 +1,3 @@
-
 let budgetInput = document.getElementById("budget-input");
 let setBudgetBtn = document.getElementById("set-input");
 let setDisplay = document.getElementById("set-display");
@@ -23,7 +22,6 @@ setBudgetBtn.addEventListener("click", () => {
     }
 
 })
-
 
 let expDescription = document.getElementById("exp-description");
 let expense = document.getElementById("expense");
@@ -80,10 +78,6 @@ addExpBtn.addEventListener("click", () => {
     expense.value = ""
     date.value = ""
 
-
-
     }
-
    
 })
-

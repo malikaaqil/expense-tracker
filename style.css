@@ -7,6 +7,7 @@
 body {
     background-color: #355C9B;
     color: #f1f1f1;
+    margin: auto;
     max-width: 1350px;
     margin: auto;
     /* border: 2px solid red; */
@@ -105,11 +106,12 @@ body {
 
 /* table */
 
-#expense-list{
+#expense-list {
     /* border: 2px solid black; */
     width: 80%;
     margin: 50px auto;
 }
+
 table {
     width: 100%;
     padding: 10px;
@@ -117,7 +119,7 @@ table {
     border-radius: 6px;
 }
 
-th{
+th {
     width: 25%;
     border-radius: 5px;
     font-size: 23px;
@@ -125,7 +127,7 @@ th{
     padding: 10px;
 }
 
-.append-table td{
+.append-table td {
     background-color: transparent;
     font-size: 20px;
     padding: 10px;
